@@ -10,7 +10,7 @@
     <PackageReference Include="xunit.runner.visualstudio" Version="2.5.3" />
     <PackageReference Include="coverlet.collector" Version="6.0.0" />
     <!-- Should never be offered v8. -->
-    <PackageReference Include="FluentAssertions" Version="7.0.0" />
+    <PackageReference Include="FluentAssertions" Version="7.2.2" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="../../src/SampleApp/SampleApp.csproj" />
