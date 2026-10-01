@@ -1,0 +1,18 @@
+name: Renovate
+on:
+  schedule:
+    - cron: "0 3 * * *"
+      timezone: Australia/Brisbane
+  workflow_dispatch:
+    inputs:
+      dry-run:
+        description: Dry run
+        type: boolean
+        default: false
+jobs:
+  renovate:
+    uses: desruc/renovate-presets/.github/workflows/renovate.yml@main
+    with:
+      dry-run: ${{ inputs.dry-run || false }}
+    secrets:
+      RENOVATE_GITHUB_TOKEN: ${{ secrets.RENOVATE_GITHUB_TOKEN }}
