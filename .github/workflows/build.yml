@@ -12,7 +12,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       # Third-party action by tag: should get a pin-digest PR with the manual check note.
       - uses: jdx/mise-action@v2
         with:
