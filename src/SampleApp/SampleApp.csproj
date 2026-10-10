@@ -7,6 +7,6 @@
     <!-- Runtime package: should wait for a person. -->
     <PackageReference Include="Serilog" Version="3.0.1" />
     <!-- Known advisory GHSA-5crp-9r3c-p9vr: should produce a vulnerability PR. -->
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 </Project>
